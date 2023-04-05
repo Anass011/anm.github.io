@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Download Video</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Download Video</h1>
+		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+			<label for="video-link">Video Link:</label>
+			<input type="text" id="video-link" name="video-link" required>
+			<button type="submit">Download</button>
+		</form>
+	</div>
+  <?php include 'code.php'; ?>
+</body>
+</html>
